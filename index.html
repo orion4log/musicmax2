@@ -1,0 +1,171 @@
+<!DOCTYPE html>  
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Максим 2</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+<link rel="stylesheet" href="animbukv/animbukv16.css">
+<link rel="stylesheet" href="animbukv/animbukv18.css">
+<link rel="stylesheet" href="styles/begstroka.css">
+<link rel="stylesheet" href="styles/granimjs.css"/>
+<link rel="stylesheet" href="playmus.css"/>
+<link rel="stylesheet" href="musmax2.css">
+<link rel="icon" type="Images/x-icon" href="gaaicon.ico"/>
+</head>
+<body>
+<canvas id="canvas-basic"></canvas>    
+<div id="particles-js"></div>
+<div id="element"></div>
+
+<div class="container-fluid text-center">
+<div class="row"><div class="col-3">
+
+<div class="animbukv18">
+  <h1>
+      <span class="word">Приходите в  <!-- <span class="superscript">s</span>  -->
+      </span>
+      <span class="word">ЗАО НПП "АТС"</span>
+  </h1>
+</div>
+<div class="animbukv16">
+  <div class="marquee">
+      <div class="marquee_blur" aria-hidden="true">
+      <p class="marquee_text">Всё, что мы есть, – это результат наших мыслей</p>
+      </div>
+      <div class="marquee_clear">
+      <p class="marquee_text">Всё, что мы есть, – это результат наших мыслей</p>
+      </div>
+  </div>  <!-- <p class="text">Текст</p> -->
+</div>
+
+<div class="containermus">
+  <h2 id="music_title">Заголовок</h2>
+  <div class="player_progress" id="player_progress">
+    <div class="progress" id="progress">
+      <div class="music_duration">
+        <span id="current_time">0:00</span>
+        <span id="duration">0:00</span>
+      </div>
+    </div>
+  </div>
+  <div class="player_controls">
+    <i class="fa-solid fa-backward" title="Предыдущий" id="prev"></i>
+    <i class="fa-solid fa-play play-button" title="Запуск" id="play"></i>
+    <i class="fa-solid fa-forward" title="Следующий" id="next"></i>
+  </div>
+</div>
+
+<button class="btn btn-primary bg-transparent" id="knp1" onclick="zapuskvan()"
+style="margin-top: 9.5rem;">Вкл./Откл.</button>
+<button class="btn btn-primary bg-transparent" id="knp1o" onclick="zapuskvano()"
+style="margin-top: 9.5rem;">Отключить фон</button>
+<button class="btn btn-primary bg-transparent" id="knp1v" onclick="zapuskvanv()"
+style="margin-top: 9.5rem;">Включить фон</button>
+
+<button class="btn btn-primary bg-transparent" id="knpg" onclick="zapusktgg()">Зелёный</button>
+<button class="btn btn-primary bg-transparent" id="knpb" onclick="zapusktgb()">Синий</button>
+<button class="btn btn-primary bg-transparent" id="knpy" onclick="zapusktgy()">Жёлтый</button>
+<button class="btn btn-primary bg-transparent" id="vsian" onclick="zapusksian()">Вкл. сияние</button>
+
+</div><div class="col-3">
+  <div id="vivodzag"></div>
+<div class="audiolist" id="musiclist1"></div>
+<div class="audiolist" id="musiclist2"></div>
+<div class="audiolist" id="musiclist3"></div>
+<div class="audiolist" id="musiclist4"></div>
+<div class="audiolist" id="musiclist5"></div>
+<div class="audiolist" id="musiclist6"></div>
+</div><div class="col-3">
+<div class="audiolist" id="musiclist7"></div>
+<div class="audiolist" id="musiclist8"></div>
+<div class="audiolist" id="musiclist9"></div>
+<div class="audiolist" id="musiclist10"></div>
+<div class="audiolist" id="musiclist11"></div>
+<div class="audiolist" id="musiclist12"></div>
+</div><div class="col-3">
+<div class="audiolist" id="musiclist13"></div>
+<div class="audiolist" id="musiclist14"></div>
+<div class="audiolist" id="musiclist15"></div>
+<div class="audiolist" id="musiclist16"></div>
+<div class="audiolist" id="musiclist17"></div>
+<div class="audiolist" id="musiclist18"></div>
+
+</div></div></div>
+
+<span class="ticker">
+  <span class="ticker__wrapper">
+    <span class="ticker__item">«Жизнь — это очень короткое время между двумя вечностями» Карлейль Томас 🎁</span>
+    <span class="ticker__item">«Жизнь — это очень короткое время между двумя вечностями» Карлейль Томас 🎁</span>
+    <span class="ticker__item">«Жизнь — это очень короткое время между двумя вечностями» Карлейль Томас 🎁</span>
+  </span>
+</span>
+
+<div class="mx-auto2 ticker2">
+  <span class="ticker2__wrapper">
+    <span class="ticker2__item">«Глупо строить планы на всю жизнь, не будучи господином даже завтрашнего дня» Сенека 🎽</span>
+    <span class="ticker2__item">«Глупо строить планы на всю жизнь, не будучи господином даже завтрашнего дня» Сенека 🎽</span>
+    <span class="ticker2__item">«Глупо строить планы на всю жизнь, не будучи господином даже завтрашнего дня» Сенека 🎽</span>
+  </span>
+</div>
+
+<div class="mx-auto3 ticker3">
+  <span class="ticker3__wrapper">
+    <span class="ticker3__item">«Банально, но всё–таки, если прислушаться, самый зловещий из всех земных звуков — тиканье часов» Владимир Солоухин 🌟</span>
+    <span class="ticker3__item">«Банально, но всё–таки, если прислушаться, самый зловещий из всех земных звуков — тиканье часов» Владимир Солоухин 🌟</span>
+    <span class="ticker3__item">«Банально, но всё–таки, если прислушаться, самый зловещий из всех земных звуков — тиканье часов» Владимир Солоухин 🌟</span>
+  </span>
+</div>
+  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<!-- <script src="https://code.jquery.com/jquery-4.0.0.slim.min.js" integrity="sha256-8DGpv13HIm+5iDNWw1XqxgFB4mj+yOKFNb+tHBZOowc=" crossorigin="anonymous"></script> -->
+<script src="styles/jquery-4.0.0.slim.min.js"></script>      
+<script> function zapuskvan(){ jQuery('#element').toggle();
+$('#knpg').hide(); $('#knpb').hide(); $('#knpy').hide(); $('#vsian').hide();
+$('#knp1o').css({color: "white"}); } </script>
+
+<script> function zapuskvano(){ jQuery('#element').hide();
+$('#knp1o').css({color: "red"}); $('#knp1v').css({color: "white"});
+$('#knpg').show(); $('#knpb').show(); $('#knpy').show(); $('#vsian').show(); } </script>
+
+<script> function zapuskvanv(){ jQuery('#element').show();
+$('#knp1o').css({color: "white"}); $('#knp1v').css({color: "red"});
+$('#knpg').hide(); $('#knpb').hide(); $('#knpy').hide(); $('#vsian').hide(); } </script>
+
+<script> function zapusktgg(){ jQuery('#canvas-basic').hide(); 
+document.body.style.backgroundColor = "green";} </script>
+<script> function zapusktgb(){ jQuery('#canvas-basic').hide(); 
+document.body.style.backgroundColor = "blue";} </script>
+<script> function zapusktgy(){ jQuery('#canvas-basic').hide(); 
+document.body.style.backgroundColor = "yellow";} </script>
+
+<script> function zapusksian(){ jQuery('#canvas-basic').show(); } </script>
+
+<script src="playmus.js"></script>  
+<script src="playlist.js"></script>
+
+<script src="styles/particles.min.js"></script>
+<script src="styles/app.js"></script>
+<script src="styles/granim.min.js"></script>
+<script src="styles/granimjs.js"></script>
+<script src="styles/three.min.js"></script>
+<script src="styles/vanta.cells.min.js"></script>
+
+<script>
+VANTA.CELLS({
+  el: "#element",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  scale: 1.00,
+  scaleMobile: 1.00
+})
+</script>
+
+</body>
+</html>
+

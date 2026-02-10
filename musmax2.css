@@ -1,0 +1,60 @@
+.audiolist{margin: 4rem;
+border: 1px dashed #a45be8; border-radius: 10px; 
+font-size: 24px;
+width: 280px;
+}
+.audiolist:hover{color: #c5c7ea;}
+#particles-js{width: 100%; height:100vh;
+z-index: -4;
+position: absolute;
+}
+#element {width: 100%; height: 100vh;
+z-index: -2;
+position: absolute;
+} 
+#knpg, #knpb, #knpy, #vsian {display: none;
+margin-top: 1rem;
+}
+#knp1v{color: red;}
+*{margin: 0; padding: 0; }
+html, body {margin: 0;padding: 0; height: 100%; 
+overflow: hidden;
+font-family: Arial, Verdana, sans-serif;
+display: flex;
+}
+.btn{font-size: .8rem;}
+.mx-auto2{
+width: 100%;
+height: 4%;
+margin-bottom: 5.4rem;
+position: absolute; 
+bottom: 0;
+align-items: center;
+justify-content: center;
+align-self: stretch; 
+}
+.mx-auto3{
+width: 100%;
+height: 4%;
+margin-bottom: 2rem;
+position: absolute; 
+bottom: 0;
+align-items: center;
+justify-content: center;
+align-self: stretch; 
+}
+
+.animbukv1{
+width: 200px;
+height: 100px;
+color: #000;
+}
+
+*{
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+
