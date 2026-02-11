@@ -114,7 +114,7 @@ function changeMusic(direction) {
 ubrcvet();
 let audiolist = document.querySelectorAll( ".audiolist" );
 audiolist[musicIndex].style.color = "white";
-audiolist[musicIndex].style.background = "green";
+audiolist[musicIndex].style.background = "transparent";
 playMusic();
 }
 
@@ -122,7 +122,7 @@ function ubrcvet() {
 let audiolist = document.querySelectorAll(".audiolist");
 for( let i = 0; i < audiolist.length; i++){ 
     audiolist[i].style.color = "black";
-    audiolist[i].style.background = "white";
+    audiolist[i].style.background = "transparent";
 }  //  musiclist1.style.color = "red";
 }
 function setProgressBar(e) {
