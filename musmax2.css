@@ -17,6 +17,10 @@ margin-top: 1rem;
 }
 #knp1v{color: red;}
 *{margin: 0; padding: 0; }
+#ssilkmax1{color: greenyellow;
+padding: 1rem;
+}
+
 html, body {margin: 0;padding: 0; height: 100%; 
 overflow: hidden;
 font-family: Arial, Verdana, sans-serif;
