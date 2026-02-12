@@ -13,10 +13,6 @@ const songs = [
     displayName: "Чистое",
   },
   {
-    path: "music/smdihania.mp3",
-    displayName: "Сантиметры дыханья",
-  },
-  {
     path: "music/nezhnost.mp3",
     displayName: "Нежность",
   },
@@ -79,6 +75,10 @@ const songs = [
   {
     path: "music/horosho.mp3",
     displayName: "Хорошо",
+  },
+  {
+    path: "music/smdihania.mp3",
+    displayName: "Сантиметры дыханья",
   },
 ];
 const music = new Audio();

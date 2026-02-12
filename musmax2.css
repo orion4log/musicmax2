@@ -12,7 +12,7 @@ position: absolute;
 z-index: -2;
 position: absolute;
 } 
-#knpg, #knpb, #knpy, #vsian {display: none;
+#knpg, #knpb, #knpy, #vsian {display: inline-block;
 margin-top: 1rem;
 }
 #knp1v{color: red;}
