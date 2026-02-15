@@ -84,6 +84,10 @@ style="margin-top: 9.5rem;">Включить фон</button>
 <button class="btn btn-primary bg-transparent vrad" style="display: none;" id="knpy" onclick="zapusktgy()">Жёлтый</button>
 <button class="btn btn-primary bg-transparent vrad" style="display: none;" id="vsian" onclick="zapusksian()">Вкл. сияние</button>
 
+<div id="pickart" style="display: none;">
+  <img src="foto/maksim98.jpg" width="220px" alt="Нет фотки">
+</div>
+
 </div><div class="col-3">
   <div id="vivodzag"></div>
 <div class="audiolist" id="musiclist1"></div>
@@ -144,12 +148,14 @@ $('#knp1o').css({color: "white"}); } </script>
 <script> function zapuskvano(){ jQuery('#element').hide();
 $('#knp1o').css({color: "red"}); $('#knp1v').css({color: "white"});
 $('#knpg').show(); $('#knpb').show(); $('#knpy').show(); $('#vsian').show(); 
-$('#ssilkmax1').hide(); } </script>
+$('#ssilkmax1').hide(); $('#pickart').show(); 
+} </script>
 
 <script> function zapuskvanv(){ jQuery('#element').show();
 $('#knp1o').css({color: "white"}); $('#knp1v').css({color: "red"});
 $('#knpg').hide(); $('#knpb').hide(); $('#knpy').hide(); $('#vsian').hide(); 
-$('#ssilkmax1').show(); } </script>
+$('#ssilkmax1').show(); $('#pickart').hide(); 
+} </script>
 
 <script> function zapusktgg(){ jQuery('#canvas-basic').hide(); 
 document.body.style.backgroundColor = "green";} </script>

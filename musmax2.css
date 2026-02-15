@@ -12,13 +12,29 @@ position: absolute;
 z-index: -2;
 position: absolute;
 } 
-#knpg, #knpb, #knpy, #vsian {display: inline-block;
-margin-top: 1rem;
+#knpg, #knpb, #knpy, #vsian, #pickart {
+display: inline-block; margin-top: 1rem;
 }
 #knp1v{color: red;}
 *{margin: 0; padding: 0; }
 #ssilkmax1{color: greenyellow;
 padding: 1rem;
+}
+#pickart{ 
+animation: 20s in-out infinite;
+}
+@keyframes in-out {
+    0% { opacity: 1; }
+    10% { opacity: 0.9; }
+    20% { opacity: 0.6; }
+    30% { opacity: 0.3; }
+    40% { opacity: 0.1; }
+    50% { opacity: 0; }
+    60% { opacity: 0.1; }
+    70% { opacity: 0.3; }
+    80% { opacity: 0.6; }
+    90% { opacity: 0.9; }
+    100% { opacity: 1; }
 }
 
 html, body {margin: 0;padding: 0; height: 100%; 
