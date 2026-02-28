@@ -1,4 +1,5 @@
-.ticker { background-color: rgb(204, 243, 243);
+.ticker { /* background-color: rgb(204, 243, 243); */
+background-color: transparent;
 margin-top: 1rem; 
 width: 100%;
   box-sizing: border-box;
@@ -30,7 +31,8 @@ animation: ticker 25s linear infinite;
   }
 }
 
-.ticker2 { background-color: rgb(208, 238, 199);
+.ticker2 {   /* background-color: rgb(208, 238, 199); */
+  background-color: transparent;
   box-sizing: border-box;
   position: absolute;
   overflow: hidden;
@@ -60,7 +62,8 @@ animation: ticker2 18s linear infinite;
   }
 }
 
-.ticker3 { background-color: rgb(231, 236, 190);
+.ticker3 {   /* background-color: rgb(231, 236, 190); */
+  background-color: transparent;
   box-sizing: border-box;
   position: absolute;
   overflow: hidden;
