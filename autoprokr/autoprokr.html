@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Фотки МакSим</title>
   <link rel="stylesheet" href="preloadnew.css" />
+  <link rel="stylesheet" href="../styles/spop.min.css">
   <link rel="stylesheet" href="owl.carousel.min.css">
   <link rel="stylesheet" href="owl.theme.default.min.css">
   <link rel="stylesheet" href="autoprokr.css">
@@ -80,6 +81,7 @@ $(document).ready(function() {
         nav:true,
         navText: ["Назад", "Вперёд"],
         autoplay:true,
+autoplayHoverPause:true,
         smartSpeed:3000, //Время движения слайда
         autoplayTimeout:4000, //Время смены слайда
         center:true,        // margin:10,  dots:true,  margin:1, Отступ от картино если выводите больше 1
@@ -97,10 +99,26 @@ $(document).ready(function() {
         }
     });
 });
+$('.autoplay').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  pauseOnHover: true
+});
 </script>
 
 <script src="../styles/particles.min.js"></script>
 <script src="../styles/app.js"></script>
+<script src="../styles/spop.min.js"></script>  
+<script>
+spop.defaults = {
+  style     : 'success',
+  autoclose : 8500,
+  position  : 'top-right'
+};
+spop('<h2 class="spop-title">При наведении мышкой на рабочее окно экрана автопрокрутка останавливается</h2>');
+</script>
 
 </body>
 </html>
