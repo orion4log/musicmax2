@@ -38,7 +38,7 @@
 .animbukv18{ margin-top: 4rem;
 background-color: transparent;
 display: inline-block;
-padding: 1rem;
+padding: .3rem;
 border: 1px dashed #8a0d13; border-radius: 18px; 
 place-items: center;
 }

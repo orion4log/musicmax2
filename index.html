@@ -23,14 +23,13 @@ integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEw
 
 <div class="container-fluid text-center">
 <div class="row"><div class="col-3">
-
+<!-- <span class="superscript">s</span>  -->
 <div class="animbukv18">
-  <h1>
-      <span class="word">Приходите в  <!-- <span class="superscript">s</span>  -->
-      </span>
-      <span class="word">ЗАО НПП "АТС"</span>
-  </h1>
+  <h1 id="demo"><span class="word">Приходите в </span>
+     <span class="word">ЗАО НПП "АТС"</span></h1>
 </div>
+<button id="btno">Заменить текст</button>
+<button id="btna">Вернуть</button>
 <div class="animbukv16">
   <div class="marquee">
       <div class="marquee_blur" aria-hidden="true">
@@ -178,27 +177,7 @@ document.body.style.backgroundColor = "yellow";} </script>
 <script src="styles/granimjs.js"></script>
 <script src="styles/three.min.js"></script>
 <script src="styles/vanta.cells.min.js"></script>
-
-<script>
-VANTA.CELLS({
-  el: "#element",
-  mouseControls: true,
-  touchControls: true,
-  gyroControls: false,
-  minHeight: 200.00,
-  minWidth: 200.00,
-  scale: 1.00,
-  scaleMobile: 1.00
-})
-</script>
-
-<script>
-proverka();
-function proverka(){
-    if (window.innerWidth < 1400 && window.innerHeight < 750) 
-alert('Размер окна недостаточен для полноценного и качественного отображения всех элементов. Лучше использовать полноэкранный режим.')  ;
-}
-</script>
+<script src="musmax2.js"></script>
   
 </body>
 </html>
