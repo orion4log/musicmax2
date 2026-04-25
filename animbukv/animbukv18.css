@@ -41,6 +41,7 @@ display: inline-block;
 padding: .3rem;
 border: 1px dashed #8a0d13; border-radius: 18px; 
 place-items: center;
+width: 98%;
 }
 
 h1 {
